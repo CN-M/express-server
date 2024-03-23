@@ -23,13 +23,13 @@ PORT=3000
 Starting the dev server:
 
 ```
-pnpm i dev
+pnpm run dev
 ```
 
 Starting the server:
 
 ```
-pnpm i start
+pnpm run start
 ```
 
 Open http://localhost:{PORT} with your browser to see the result.
