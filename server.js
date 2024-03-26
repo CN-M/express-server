@@ -24,6 +24,14 @@ app.get("/", (req, res) => {
   }
 });
 
+app.post("/", (req, res) => {
+  const { name, occupation } = req.body;
+
+  res.status(200).json({
+    message: `Hey there, ${name}. What's it like being a ${occupation}?`,
+  });
+});
+
 // Catch 404 errors and forward to error handler
 app.use((req, res, next) => {
   next(createError(404));
