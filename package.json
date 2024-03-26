@@ -17,7 +17,7 @@
   "dependencies": {
     "colors": "^1.4.0",
     "cors": "^2.8.5",
-    "express": "^4.19.1",
+    "express": "^4.19.2",
     "http-errors": "^2.0.0"
   }
 }
