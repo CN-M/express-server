@@ -2,11 +2,10 @@ const express = require("express");
 require("dotenv").config();
 require("colors");
 
-const app = express();
-
 const { PORT } = process.env;
-
 const port = PORT || 8000;
+
+const app = express();
 
 app.get("/", (req, res) => {
   res.status = 200;
