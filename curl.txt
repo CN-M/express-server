@@ -1,0 +1,7 @@
+curl -X GET http://localhost:3000?name=Ntsako
+
+curl -X POST http://localhost:3000 -H 'Content-Type: application/json' -d '{"name": "Ntsako", "occupation": "Software Engineer"}'
+
+curl -X PUT  http://localhost:3000 -H 'Content-Type: application/json' -d '{"name": "Ntsako", "occupation": "Software Engineer"}'
+
+curl -X DELETE  http://localhost:3000 -H 'Content-Type: application/json' -d '{"name": "Ntsako", "occupation": "Software Engineer"}'

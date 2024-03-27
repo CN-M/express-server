@@ -1,12 +1,18 @@
-const createError = require("http-errors");
+import { NextFunction, Request, Response } from "express";
+import createError from "http-errors";
 
 // Catch 404 errors and forward to error handler
-const catch404 = (req, res, next) => {
+export const catch404 = (req: Request, res: Response, next: NextFunction) => {
   next(createError(404));
 };
 
 // Error Handler
-const errorHandler = (err, req, res, next) => {
+export const errorHandler = (
+  err: any,
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   // Set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get("env") === "development" ? err : {};
@@ -20,4 +26,4 @@ const errorHandler = (err, req, res, next) => {
   });
 };
 
-module.exports = { catch404, errorHandler };
+// module.exports = { catch404, errorHandler };
