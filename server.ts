@@ -6,6 +6,8 @@ import express, { Express } from "express";
 dotenv.config();
 
 import { catch404, errorHandler } from "./middleware/errorMiddleware";
+
+// Import Routes
 import postRoute from "./routes/postRoute";
 import userRoute from "./routes/userRoute";
 
