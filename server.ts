@@ -6,7 +6,8 @@ import express, { Express } from "express";
 dotenv.config();
 
 import { catch404, errorHandler } from "./middleware/errorMiddleware";
-import mainRoute from "./routes/mainRoute";
+import postRoute from "./routes/postRoute";
+import userRoute from "./routes/userRoute";
 
 const { PORT } = process.env;
 const port = PORT || 8000;
@@ -18,7 +19,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/", mainRoute);
+app.use("/", postRoute);
+app.use("/users", userRoute);
 
 // Error Middleware
 app.use(catch404);
