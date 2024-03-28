@@ -20,10 +20,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/", mainRoute);
 
-// Catch 404 errors and forward to error handler
+// Error Middleware
 app.use(catch404);
-
-// Error Handler
 app.use(errorHandler);
 
 app.listen(port, () => {
