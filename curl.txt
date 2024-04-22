@@ -8,6 +8,6 @@ curl -X POST http://localhost:3000/ -H 'Content-Type: application/json' -d '{ "c
 
 curl -X PUT  http://localhost:3000 -H 'Content-Type: application/json' -d '{"name": "Ntsako", "occupation": "Software Engineer"}'
 
-curl -X DELETE  http://localhost:3000 -H 'Content-Type: application/json' -d '{"name": "Ntsako", "occupation": "Software Engineer"}'
+curl -X DELETE http://localhost:3000 -H 'Content-Type: application/json' -d '{"name": "Ntsako", "occupation": "Software Engineer"}'
 
 curl -X POST http://localhost:3000 -H 'Content-Type: application/json' -d '{"Content": "Ntsako", "occupation": "Software Engineer"}'

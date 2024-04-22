@@ -7,9 +7,10 @@
     "test": "vitest",
     "build": "npx tsc",
     "watch": "npx tsc --watch",
-    "start": "node dist/server.js",
-    "dev": "nodemon server.ts",
-    "exec": "concurrently \"npx tsc --watch\" \"ts-node server.ts\""
+    "start": "node server/dist/server.js",
+    "client": "pnpm run --prefix client dev",
+    "dev-server": "nodemon server.ts",
+    "dev": "concurrently \"npx tsc --watch\" \"ts-node server/server.ts\" \"pnpm run client\""
   },
   "keywords": [],
   "author": "",
