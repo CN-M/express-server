@@ -27,6 +27,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/", postRoute);
 app.use("/users", userRoute);
+app.use("/account", userRoute);
 
 // Error Middleware
 app.use(catch404);
