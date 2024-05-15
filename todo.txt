@@ -1,0 +1,28 @@
+Endpoints
+
+Like Post
+Edit Post
+
+Schema design
+I want to make a kind of Twitter clone. I want users to sign up with their usernames, update their display names, 
+have passwords or just use their social accounts. Maybe need their emails just in case they sign up with Gmail or Github.
+
+User Model
+id
+username // Can come from email
+email?
+password // If they use localmauth
+posts
+
+Post Model
+id
+content
+likes int
+author
+
+Wishlist:
+User
+followers User[]
+
+Post
+comments comment[]/Post[]
